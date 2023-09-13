@@ -6,9 +6,8 @@ class FeaturedListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height * 0.3,
-      margin: const EdgeInsets.only(left: 20),
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => const CustomBookItem(),
